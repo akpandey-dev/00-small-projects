@@ -1,0 +1,343 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <title>New Calculator</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <style>
+        h1 {
+            font-size: xx-large;
+            font-style: oblique;
+            font-family: sans-serif;
+            color: black;
+            align-items: center;
+            text-align: center;
+        }
+
+        #mean {
+            color: white;
+            border-color: white;
+            border-radius: 0px;
+            border-width: 3px;
+            border-style:solid;
+            background-color: black;
+            box-shadow: 2px;
+            width: 350px;
+            text-align: right;
+            padding: 10px;
+            font-size: xx-large;
+            box-sizing: content-box;
+            margin: 0;
+            border-bottom: 6px;
+        }
+        
+        #max {
+            margin-top: 3.28px;
+            margin-bottom: 3.28px;
+            margin-left: 3.28px;
+            margin-right: 3.28px ;
+            color: ghostwhite;
+            background-color:dodgerblue;
+            border-color: ivory;
+            border-style: solid;
+            border-radius: 5px;
+            padding: 24px;
+            font-size: 24px;
+            text-align: center;
+            min-height: 50px;
+            min-width: 50px;
+
+        }
+
+        #min {
+            margin-top: 3.28px;
+            margin-bottom: 3.28px;
+            margin-left: 3.28px;
+            margin-right: 3.28px ;
+            color: ghostwhite;
+            background-color: red;
+            border-color: ivory;
+            border-style: solid;
+            border-radius: 5px;
+            padding: 24px;
+            font-size: 24px;
+            text-align: center;
+            min-height: 50px;
+            min-width: 50px;
+
+
+        }
+        body {
+            background-color:darkgrey;
+            margin: 0;
+            padding: 0;
+            font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+            height: 100vh;
+            overflow: hidden;
+           
+           
+           
+
+
+
+        }
+
+      
+               
+
+        
+
+        .button {
+                    
+            background-color: black;
+            border: 3px;
+            border-color: white;
+            border-style: solid;
+            display: grid;
+            grid-template-columns: repeat(4, 80px);
+            gap: 10px;
+            padding: 10px;
+            justify-content: center;
+            margin-top: 0;
+            box-sizing: border-box;
+           
+
+            
+
+
+        }
+        
+        .btn {
+            margin-top: 3.28px;
+            margin-bottom: 3.28px;
+            margin-left: 3.28px;
+            margin-right: 3.28px ;
+            color: ghostwhite;
+            background-color: black;
+            border-color: ivory;
+            border-style: solid;
+            border-radius: 5px;
+            padding: 24px;
+            font-size: 24px;
+            text-align: center;
+            min-height: 50px;
+            min-width: 50px;
+
+        }
+
+    #a {
+        margin-top: 3.28px;
+            margin-bottom: 3.28px;
+            margin-left: 3.28px;
+            margin-right: 3.28px ;
+            color: greenyellow;
+            background-color: black;
+            border-color: ivory;
+            border-style: solid;
+            border-radius: 5px;
+            padding: 24px;
+            font-size: 24px;
+            text-align: center;
+            min-height: 50px;
+            min-width: 50px;
+
+    }
+     
+    #b {
+        margin-top: 3.28px;
+            margin-bottom: 3.28px;
+            margin-left: 3.28px;
+            margin-right: 3.28px ;
+            color: greenyellow;
+            background-color: black;
+            border-color: ivory;
+            border-style: solid;
+            border-radius: 5px;
+            padding: 24px;
+            font-size: 24px;
+            text-align: center;
+            min-height: 50px;
+            min-width: 50px;
+
+    }
+    #c {
+        margin-top: 3.28px;
+            margin-bottom: 3.28px;
+            margin-left: 3.28px;
+            margin-right: 3.28px ;
+            color: greenyellow;
+            background-color: black;
+            border-color: ivory;
+            border-style: solid;
+            border-radius: 5px;
+            padding: 24px;
+            font-size: 24px;
+            text-align: center;
+            min-height: 50px;
+            min-width: 50px;
+
+    }
+    #d {
+        margin-top: 3.28px;
+            margin-bottom: 3.28px;
+            margin-left: 3.28px;
+            margin-right: 3.28px ;
+            color: greenyellow;
+            background-color: black;
+            border-color: ivory;
+            border-style: solid;
+            border-radius: 5px;
+            padding: 24px;
+            font-size: 24px;
+            text-align: center;
+            min-height: 50px;
+            min-width: 50px;
+
+    }
+    #e {
+        margin-top: 3.28px;
+            margin-bottom: 3.28px;
+            margin-left: 3.28px;
+            margin-right: 3.28px ;
+            color: greenyellow;
+            background-color: black;
+            border-color: ivory;
+            border-style: solid;
+            border-radius: 5px;
+            padding: 24px;
+            font-size: 24px;
+            text-align: center;
+            min-height: 50px;
+            min-width: 50px;
+
+    }
+    #f {
+        margin-top: 3.28px;
+            margin-bottom: 3.28px;
+            margin-left: 3.28px;
+            margin-right: 3.28px ;
+            color: greenyellow;
+            background-color: black;
+            border-color: ivory;
+            border-style: solid;
+            border-radius: 5px;
+            padding: 24px;
+            font-size: 24px;
+            text-align: center;
+            min-height: 50px;
+            min-width: 50px;
+
+    }
+    #g {
+        margin-top: 3.28px;
+            margin-bottom: 3.28px;
+            margin-left: 3.28px;
+            margin-right: 3.28px ;
+            color: greenyellow;
+            background-color: black;
+            border-color: ivory;
+            border-style: solid;
+            border-radius: 5px;
+            padding: 24px;
+            font-size: 24px;
+            text-align: center;
+            min-height: 50px;
+            min-width: 50px;
+
+    }
+
+        .calculator {
+                   display: flex;
+                   flex-direction: column;
+                   align-items: center;
+                   margin-top: 40px;
+                   border-color: black;
+                   border-style: solid;
+                   border-radius: 0px;
+                   margin-left: 0px;
+                   margin-right: 0px;
+                   box-sizing: border-box;
+                   width: min-content;
+                  
+                  
+                   
+
+
+
+        }
+
+        .input {
+            justify-self: center;
+        }
+
+        .semi {
+           
+            text-align: center;
+            justify-content: center;
+            display: flex;
+        
+        }
+       
+       
+    </style>
+</head>
+<body bgcolor="lightyellow">
+   
+<div class="semi">
+    <div class="calculator">
+        <div class="input">
+              <input type="text" id="mean" disabled />
+        </div>
+        <div class="button">
+            <button type="button" onclick="appendToDisplay('/100*')" id="a" class="btn">%</button>
+            <button type="button" onclick="appendToDisplay('(')" id="b" class="btn">(</button>
+            <button type="button" onclick="appendToDisplay(')')" id="c" class="btn">)</button>
+            <button type="button" onclick="appendToDisplay('/')" id="d" class="btn">/</button>
+
+            <button type="button" onclick="appendToDisplay('1')" class="btn">1</button>
+            <button type="button" onclick="appendToDisplay('2')" class="btn">2</button>
+            <button type="button" onclick="appendToDisplay('3')" class="btn">3</button>
+            <button type="button" onclick="appendToDisplay('*')" id="e" class="btn">*</button>
+
+            <button type="button" onclick="appendToDisplay('4')" class="btn">4</button>
+            <button type="button" onclick="appendToDisplay('5')" class="btn">5</button>
+            <button type="button" onclick="appendToDisplay('6')" class="btn">6</button>
+            <button type="button" onclick="appendToDisplay('-')" id="f" class="btn">-</button>
+
+            <button type="button" onclick="appendToDisplay('7')" class="btn">7</button>
+            <button type="button" onclick="appendToDisplay('8')" class="btn">8</button>
+            <button type="button" onclick="appendToDisplay('9')" class="btn">9</button>
+            <button type="button" onclick="appendToDisplay('+')" id="g" class="btn">+</button>
+
+            <button type="button" onclick="clearDisplay()" id="min" class="btn-clear">AC</button>
+            <button type="button" onclick="appendToDisplay('0')" class="btn">0</button>
+            <button type="button" onclick="appendToDisplay('.')" class="btn">.</button>
+            <button type="button" onclick="calculate()" id="max" class="btn">=</button>
+        </div>
+    </div>
+ </div>
+
+    <script>
+        function appendToDisplay(value) {
+            document.getElementById('mean').value += value;
+        }
+
+        function calculate() {
+            const mean = document.getElementById('mean');
+            try {
+                const result = eval(mean.value);
+                mean.value = result ;
+                mean.style.color = '#ADD8E6'
+
+            } catch (e) {
+                mean.value = 'Error';
+                mean.value.color = 'white' ;
+            }
+        }
+
+        function clearDisplay() {
+            document.getElementById('mean').value = '';
+            mean.style.color = 'white';
+        }
+    </script>
+</body>
+</html>
