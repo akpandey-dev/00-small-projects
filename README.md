@@ -43,7 +43,7 @@ Each folder contains its own `README.md`.
 
 1. Clone the repository:  
    ```bash
-   git clone https://github.com/akp-labs/00-small-projects.git
+   git clone https://github.com/akpandey-dev/00-small-projects.git
    ```
 2. Navigate to the folder of your interest.
 3. Open files in the appropriate environment (eg., text editor, IDE, or browser).
