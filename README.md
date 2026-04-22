@@ -12,11 +12,16 @@
  **Also serving the purpose of a Bridge repo: small projects from home to school lab.**
 ## Repository Structure
 
-- **`c-cpp-csharp-projects/`**  
-  Contains subfolders for **C**, **C++**, and **C#** projects.  
+- **`c-projects/`**  
   These include small console applications, algorithms, and learning exercises.  
 
-- **`html-js-css-projects/`**  
+- **`cpp-projects/`**  
+  These include small console applications, algorithms, and experiments.
+
+- **`csharp-projects/`**  
+  Small CLI scripts based on C#. 
+
+- **`web-projects/`**  
   Web-based mini projects like **calculators, interactive games, prank pages, and word counters**.  
   Fully client-side and playable in any modern browser.  
 
@@ -24,7 +29,10 @@
   Small Java experiments for practice and learning. Focused on console applications and basic OOP exercises.  
 
 - **`python-projects/`**  
-  Python scripts, utilities, and mini games. Projects range from **pattern printers** to **fun prank scripts** and console tools.  
+  Python scripts, utilities, and mini games. Projects range from **pattern printers** to **fun prank scripts** and console tools. 
+
+- **`ts-projects/`**  
+  TypeScript based projects like small CLI scripts and applications, experiments and some local Node.js packages.
 
 Each folder contains its own `README.md`.
 
